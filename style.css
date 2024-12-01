@@ -1,0 +1,1186 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-wrap: pretty;
+    /* border: 1px solid red; */
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    /* background-color: #000000; */
+    font-family: "Rajdhani", Sans-serif;
+
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6,
+p {
+    text-wrap: balance;
+}
+
+input,
+textarea,
+button {
+    font-family: "Rajdhani", Sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+:root {
+    --primaryColor: #be9c79;
+    --secondaryColor: #660600;
+    --darkColor: #330300;
+    --lightColor: #ff0f00;
+    --regularFont: 1.6rem;
+    --headingFont: 54px;
+    --ffPrimary: "Rajdhani", Sans-serif;
+}
+
+/* Default code Ends here */
+
+/* project standard classes Starts */
+
+.align {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 3rem;
+}
+
+.componentSpacing {
+    padding: 1rem 0;
+}
+
+/* project standard classes Ends */
+.dflex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dflex-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.dflex-col-start {
+    display: flex;
+    align-items: flex-start;
+    /* justify-content: center; */
+    /* flex-direction: column; */
+    /* text-align: center; */
+}
+
+.dflex-col-just-start {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+
+.dflex-start {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+    flex-direction: column;
+}
+
+.dflexaround {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.grid-5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid-6 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+
+
+/*::: HEADER CODE STARTS HERE::: */
+.navContainer {
+    background-color: #ffffff;
+}
+
+.image img {
+    height: 8vh;
+    padding-left: 7rem;
+
+}
+
+.navlink li {
+    list-style-type: none;
+
+}
+
+.navlink li a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
+    color: #0d1322;
+}
+
+.navlink {
+    gap: 4rem;
+}
+
+.navbutton {
+    display: flex;
+    justify-content: end;
+    margin-right: 8rem;
+    padding: 2rem 1rem 1rem 1rem;
+}
+
+.navbutton a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Rajdhani", Sans-serif;
+
+}
+
+.navbutton button {
+    padding: 1rem;
+    background-color: #00a662;
+    border: none;
+    border-radius: 1rem;
+}
+
+.navbutton button:hover {
+    background-color: #000;
+}
+
+.navBody {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.navlink i {
+    font-size: 1.3rem;
+    color: #0d1322;
+}
+
+.heroSection {
+    background-image: url(./assets/images/banner.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 11rem 4rem 9rem 8rem;
+}
+
+.heroTitle h1 {
+    font-size: 72px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.2em;
+    /* letter-spacing: 5px; */
+    font-style: normal;
+    font-family: "Rajdhani", Sans-serif;
+}
+
+.heroTitle h3 {
+    color: #324a6d;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 1.6em;
+}
+
+.heroTitle p {
+    color: #324a6d;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.6em;
+    text-transform: none;
+    font-style: normal;
+    margin-top: 1rem;
+}
+
+.heroButton {
+    margin-top: 3rem;
+}
+
+.heroButton button {
+    padding: 1rem 1rem 1rem 1rem;
+    background-color: #00a662;
+    border: none;
+    border-radius: 1rem;
+}
+
+.heroButton button:hover {
+    background-color: #000;
+}
+
+.heroButton button a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.partnerContainer {
+    background-color: #ffffff;
+}
+
+.partnerImage img {
+    height: 56vh;
+    padding: 3rem 2rem 2rem 4rem;
+    border-radius: 6rem;
+}
+
+/* .partnerImage img {
+    border-radius: 6rem 6rem;
+} */
+.partnerBody {
+    padding: 3rem;
+}
+
+.partnerHeading {
+    margin-top: 2rem;
+    padding-right: 12rem;
+}
+
+.partnerHeading h5 {
+    color: #00b9ae;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 1.1em;
+}
+
+.partnerHeading p {
+    color: #324a6d;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+    margin-top: 2rem;
+}
+
+.partnerHeading h2 {
+    color: #0d1322;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 49px;
+    margin-top: 2rem;
+}
+
+.partnerHeading p span {
+    color: #00a662;
+}
+
+.servicesContainer {
+    background-color: #ffffff94;
+}
+
+.servicesTitle h4 {
+    color: #00b9ae;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 1.1em;
+    font-family: "Rajdhani", Sans-serif;
+}
+
+.servicesBody {
+    padding: 4rem;
+}
+
+.servicesTitle h2 {
+    font-family: "Rajdhani", Sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 49px;
+    margin-top: 2rem;
+}
+
+.servicesTitle p {
+    color: #324a6d;
+    font-family: "Rajdhani", Sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: none;
+    font-style: normal;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.designCard {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    /* width: 24%; */
+    border: 1px solid #d3d3d3;
+}
+
+.designBody {
+    gap: 2rem;
+    padding: 5rem;
+}
+
+.designIcon i {
+    font-size: 5rem;
+    margin-top: 2rem;
+    color: #00b9ae;
+}
+
+.designCard h3 {
+    font-size: 24px;
+    color: #324a6d;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: -.2px;
+    margin-top: 2rem;
+    text-align: center;
+
+}
+
+.kk h3 {
+    font-size: 2rem;
+    margin-left: 2rem;
+    text-align: center;
+}
+
+.designCard p {
+    color: #324a6d;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.kk p {
+    color: #324a6d;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+.designCard button {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    padding: 1rem 1rem 1rem 1rem;
+    border: none;
+}
+
+.designCard button a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #0d1322;
+}
+
+.ready {
+    background-image: url(./assets/images/abstract-blurred-corridor-background-from-building-hallway-corridor-building-background-scaled.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* padding: 11rem 4rem 9rem 8rem; */
+}
+
+.readyTitle h2 {
+    font-family: "Rajdhani", Sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    color: #0d1322;
+}
+
+.readyTitle p {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 40px;
+    font-family: "Rajdhani", Sans-serif;
+    text-align: center;
+    margin-top: 3rem;
+    color: #0d1322;
+}
+
+.readyTitle button {
+    padding: 1rem 1rem 1rem 1rem;
+    margin-top: 3rem;
+    background-color: #00a662;
+    border: none;
+
+}
+
+.readyTitle button a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.readyBody {
+    padding: 4rem;
+}
+
+.whatHeading h5 {
+    color: #00b9ae;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.1em;
+    letter-spacing: 2px;
+    margin-top: 2rem;
+}
+
+.whatHeading h2 {
+    color: #0d1322;
+    font-family: "Rajdhani", Sans-serif;
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 49px;
+    margin-top: 2rem;
+}
+
+.whatHeading p {
+    color: #324a6d;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 32px;
+    margin-top: 4rem;
+}
+
+.valuesImage img {
+    height: 60vh;
+    border-radius: 5rem;
+}
+
+.valuesIcon i {
+    font-size: 5rem;
+    color: #00b9ae;
+    margin-top: 6rem;
+}
+
+.valueskk h3 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.1em;
+    color: #0d1322;
+    margin-top: 3rem;
+}
+
+.valueskk p {
+    color: #324a6d;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5em;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.valuesrr h3 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.1em;
+    color: #0d1322;
+    margin-top: 3rem;
+}
+
+.valuesrr p {
+    color: #324a6d;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5em;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.valuesBody {
+    padding: 3rem;
+}
+
+.workTitle h5 {
+    color: #00b9ae;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.1em;
+    letter-spacing: 2px;
+    margin-top: 2rem;
+}
+
+.workTitle h2 {
+    color: #0d1322;
+    font-family: "Rajdhani", Sans-serif;
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 49px;
+    margin-top: 2rem;
+}
+
+.workTitle p {
+    color: #324a6d;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 32px;
+    margin-top: 4rem;
+}
+
+.workCardBody {
+    justify-items: center;
+    padding: 10rem 10rem;
+
+}
+
+.workCard {
+    min-height: 40rem;
+    width: 40rem;
+    background-image: url(./assets/images/aaraadentalcare-in.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    /* border: 2px solid; */
+    display: flex;
+    align-items: end;
+}
+
+.box {
+    background-color: #0e0e0ea5;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.workCard1 {
+    min-height: 40rem;
+    width: 40rem;
+    background-image: url(./assets/images/kathir-Surgicals-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    /* border: 2px solid; */
+    display: flex;
+    align-items: end;
+}
+
+.workCard2 {
+    min-height: 40rem;
+    width: 40rem;
+    background-image: url(./assets/images/Home-–-Sparkling-Smilez-Dental-1-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    /* border: 2px solid; */
+    display: flex;
+    align-items: end;
+
+}
+
+.box h3 {
+    color: #12e6da;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    margin-left: 2rem;
+}
+
+.box h4 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    margin-left: 2rem;
+}
+
+.boxIcon i {
+    font-size: 4rem;
+    color: #12e6da;
+}
+
+.kt {
+    padding: 0rem 15rem 0rem 0rem;
+
+}
+
+.ourTitle h5 {
+    color: #00b9ae;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.1em;
+    letter-spacing: 2px;
+    margin-top: 2rem;
+}
+
+.ourTitle h2 {
+    color: #0d1322;
+    font-family: "Rajdhani", Sans-serif;
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 49px;
+    margin-top: 2rem;
+}
+
+.testimonial-container {
+    max-width: 1200px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonial-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    max-width: 350px;
+    transition: transform 0.3s;
+}
+
+.testimonial-card:hover {
+    transform: scale(1.05);
+}
+
+.testimonial-img img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.testimonial-card h3 {
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.designation {
+    font-size: 16px;
+    color: #00000080;
+    margin-bottom: 20px;
+}
+
+.testimonial-text {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 3rem;
+}
+
+.textBody {
+    justify-items: center;
+    padding: 12rem 12rem;
+}
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.contactContainer {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; */
+    background-color: #000;
+}
+
+.contactText {
+    flex: 1 1 300px;
+    margin: 10px;
+}
+
+.contactText h3 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.contactlink h3 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+p {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 5px 0;
+    color: #ffffff;
+    margin-left: 2rem;
+}
+
+.ee ul {
+    list-style: none;
+}
+
+.ee ul li {
+    margin-bottom: 5px;
+    gap: 2rem;
+}
+
+ul li a {
+    color: #00e4e4;
+    text-decoration: none;
+    font-size: 17px;
+
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+.contactText i {
+    margin-right: 20px;
+    font-size: 3rem;
+    color: #00e4e4;
+}
+
+.contactBody {
+    /* justify-items: center; */
+    padding: 8rem 8rem;
+}
+
+.copyRightContainer {
+    background-color: #000;
+}
+
+.social i {
+    color: #00e4e4;
+    display: flex;
+    font-size: 3rem;
+    justify-content: flex-end;
+
+}
+
+.social {
+    gap: 3rem;
+}
+
+.copyLink span {
+    color: #00e4e4;
+}
+
+.copyRightsBody {
+    padding: 3rem;
+}
+
+.new {
+    display: flex;
+    justify-content: center;
+}
+
+.line {
+    width: 95%;
+    height: 2px;
+    background-color: #ffffff58;
+}
+
+.lines {
+    width: 20%;
+    height: 3px;
+    background-color: #00a662;
+}
+
+.news {
+    display: flex;
+    justify-content: center;
+}
+
+.liq {
+    width: 200px;
+    height: 3px;
+    background-color: #00a662;
+}
+
+.mores {
+    display: flex;
+    justify-content: center;
+}
+
+@media(width <=576px) {
+    .navContainer .heroContainer .partnerContainer .servicesContainer .readyContainer .valuesContainer .workContainer .clientsContainer .contactContainer {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        max-width: 576px;
+        /* margin: auto; */
+        /* padding: 0 1rem; */
+    }
+    .heroSection {
+        padding: 5rem 0rem 4rem 2rem;
+        
+        
+    }
+    .heroTitle h1 {
+        font-size: 45px;
+        font-weight: 700;
+        
+    }
+    .heroTitle h3 {
+        color: #324a6d;
+        font-size: 30px;
+        font-weight: 600;
+        /* line-height: 1.6em; */
+    }
+    .heroTitle p {
+        color: #324a6d;
+        font-size: 23px;
+        font-weight: 500;
+        margin: 4rem 0rem;
+        width: 80%;
+        /* margin-bottom: 3rem; */
+        
+    }
+    .heroButton {
+        margin-top: 0rem;
+        
+    }
+    .heroButton button {
+        margin-bottom: 3rem;
+    }
+    .partnerBody {
+        padding: 0rem;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .partnerHeading {
+        margin-top: 2rem;
+        padding-right: 0rem;
+    }
+    .partnerHeading h5 {
+        color: #00b9ae;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        line-height: 1.1em;
+        margin-left: 2rem;
+    }
+    .partnerHeading h2 {
+        color: #0d1322;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 40px;
+        margin-top: 1rem;
+        margin-left: 2rem;
+    }
+    .partnerHeading p {
+        color: #324a6d;
+        font-size: 21px;
+        font-weight: 500;
+        line-height: 32px;
+        margin-top: 1rem;
+        width: 80%;
+    }
+    .partnerImage img {
+        height: 56vh;
+        padding: 3rem 2rem 2rem 4rem;
+        border-radius: 6rem;
+        display: none;
+    }
+    .lines {
+        width: 20%;
+        height: 3px;
+        background-color: #00a662;
+    }
+    
+    .news {
+        display: flex;
+        margin-right: 4rem;
+    }
+    .servicesTitle h4 {
+        color: #00b9ae;
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 2px;
+        line-height: 1.1em;
+       
+    }
+    .servicesTitle {
+         display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+    .servicesTitle h2 {
+        font-family: "Rajdhani", Sans-serif;
+        font-size: 32px;
+        font-weight: 500;
+        margin-top: 2rem;
+       
+    }
+    .liq {
+        width: 100px;
+        height: 3px;
+        background-color: #00a662;
+        justify-content: center;
+    }
+    
+    .mores {
+        display: flex;
+        justify-content:center;
+    }
+    .servicesTitle p {
+        color: #324a6d;
+        font-size: 20px;
+        font-weight: 500;
+        text-transform: none;
+        font-style: normal;
+        line-height: 32px;
+        /* width: 80%; */
+       
+    }
+    .designBody {
+        gap: 2rem;
+        padding: 4rem;
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+    .designCard {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        /* max-width: 500px; */
+        border: 1px solid #d3d3d3;
+        /* margin: 0 6rem;  */
+    }
+    .readyTitle h2 {
+        font-family: "Rajdhani", Sans-serif;
+        font-size: 38px;
+        font-weight: 500;
+        color: #0d1322;
+        text-align: center;
+        /* width: 75%; */
+    }
+    .readyTitle p {
+        font-size: 27px;
+        font-weight: 500;
+        line-height: 40px;
+        font-family: "Rajdhani", Sans-serif;
+        /* margin-right: 6rem; */
+        color: #0d1322;
+    }
+    .readyTitle button {
+        padding: 1rem 1rem 1rem 1rem;
+        margin-top: 2rem;
+        background-color: #00a662;
+        border: none;
+        /* margin-right: 3rem; */
+    }
+    .whatHeading h5 {
+        color: #00b9ae;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.1em;
+        letter-spacing: 2px;
+        margin-top: 4rem;
+    }
+    .whatHeading h2 {
+        color: #0d1322;
+        font-family: "Rajdhani", Sans-serif;
+        font-size: 35px;
+        font-weight: 500;
+        line-height: 49px;
+        margin-top: 0rem;
+        
+    }
+    .whatHeading p {
+        color: #324a6d;
+        font-size: 20px;
+        margin-top: 3rem;
+        text-align: center;
+    }
+    .valuesBody {
+        padding: 0rem;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .valuesImage img {
+        /* height: 55vh; */
+        /* max-width: fit-content; */
+        border-radius: 5rem;
+        margin-top: 3rem;
+    }
+    .workTitle h2 {
+        color: #0d1322;
+        font-family: "Rajdhani", Sans-serif;
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 49px;
+        margin-top: 0rem;
+    }
+    .workTitle p {
+        color: #324a6d;
+        font-size: 20px;
+        font-weight: 500;
+        font-style: normal;
+        line-height: 32px;
+        margin-top: 2rem;
+        text-align: center;
+    }
+    .workCardBody {
+        justify-items: center;
+        padding: 2rem 2rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .ourTitle h5 {
+        color: #00b9ae;
+        font-size: 20px;
+        margin-top: 0rem;
+    }
+    .ourTitle h2 {
+        color: #0d1322;
+        font-size: 35px;
+        margin-top: 0rem;
+    }
+    .textBody {
+        justify-items: center;
+        padding: 5rem 5rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .contactBody {
+        /* justify-items: center; */
+        padding: 8rem 8rem;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    ul li a {
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 17px;
+    
+    }
+    .ee ul li {
+        margin-bottom: 5px;
+        
+
+    }
+    .social i {
+        color: #00e4e4;
+        display: flex;
+        font-size: 2rem;
+        justify-content: flex-end;
+    
+    }
+    .copyRightsBody {
+        padding: 3rem;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .social {
+        gap: 3rem;
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 3rem;
+        margin-top: 2rem;
+    }
+    .navBody {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .navlink li a {
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: 500;
+        color: #0d1322;
+        display: none;
+    }
+    .navbutton {
+        display: flex;
+        justify-content: end;
+        margin-right: 8rem;
+        padding: 2rem 1rem 1rem 1rem;
+        display: none;
+    }
+    .workCard {
+        /* min-height: 40rem; */
+        /* width: 40rem; */
+        max-width: fit-content;
+        background-image: url(./assets/images/aaraadentalcare-in.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+        /* border: 2px solid; */
+        display: flex;
+        align-items: end;
+    }
+    
+    .box {
+        background-color: #0e0e0ea5;
+        /* width: 100%; */
+        padding: 1rem 0;
+    }
+    
+    .workCard1 {
+        /* min-height: 40rem; */
+        max-width: fit-content;
+        background-image: url(./assets/images/kathir-Surgicals-2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+        /* border: 2px solid; */
+        display: flex;
+        align-items: end;
+    }
+    .workCard2 {
+        /* min-height: 40rem; */
+        max-width: fit-content;
+        background-image: url(./assets/images/Home-–-Sparkling-Smilez-Dental-1-1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+        /* border: 2px solid; */
+        display: flex;
+        align-items: end;
+    }
+
+}
+
